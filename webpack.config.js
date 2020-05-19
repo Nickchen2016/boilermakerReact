@@ -14,6 +14,16 @@ module.exports = {
     module: {
       rules: [
         {
+          test: /\.less$/, //Transform less file for webpack to read
+          use:[
+              'style-loader',
+              'css-loader',
+              'less-loader' 
+              //The order of usage is backward. we use less-loader 
+              //to deal less file, then goes to css-loader, then style-loader
+          ]
+        },
+        {
           test: /\.js$/,
           exclude: /node_modules/,
           use: {

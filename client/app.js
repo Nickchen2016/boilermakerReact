@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Home';
+import Table from './Table';
+import '../public/style.less';
 
-ReactDOM.render( <Home/>,
+ReactDOM.render( <Table/>,
   document.getElementById('app') // make sure this is the same as the id of the div in your index.html
 );
 
