@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
     middleware(compiler, {
+      noInfo: true,
       // webpack-dev-middleware options
       publicPath: webpackConfig.output.publicPath
     })

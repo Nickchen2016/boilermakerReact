@@ -13,18 +13,7 @@ export const useDataArr = () =>{
         setnumArray([...arr]);
         console.log('....',numArray);
     },[]);
-    // useEffect(()=>{
-    //     fetch(url)
-    //     .then(res=>res.json())
-    //     .then(result=>{
-    //       console.log(result);
-    //       setData({...result});
-    //     //   setisEmpty(false);
-    //     })
-    //     .catch(error=>{
-    //       console.error('Error: ',error)
-    //     });
-    //   },[])
+
     return [numArray];
 
 }

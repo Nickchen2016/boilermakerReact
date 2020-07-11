@@ -9,6 +9,8 @@ module.exports = {
       path: path.resolve(__dirname, 'public'), // assumes your bundle.js will also be in the root of your project folder
       filename: 'bundle.js',
       publicPath:  '/',
+      hotUpdateChunkFilename: 'hot/hot-update.js', // Those HMR chunks are created by HotModuleReplacementPlugin when we use --watch flag running webpack
+      hotUpdateMainFilename: 'hot/hot-update.json' // Define specific folder(hot) and file for those chunks
     },
     devtool: 'source-maps',
     module: {
